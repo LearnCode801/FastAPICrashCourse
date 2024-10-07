@@ -1,97 +1,105 @@
-⭐️ Course Contents
-00:00 Intro
-06:33 Project Overview
-11:22 Mac Python Installation
-13:15 Mac VS Code install and setup
-16:37 Windows Python Installation
-18:30 Windows VS Code install and setup
-22:11 Python virtual Env Basics
-24:35 Virtual Env on windows
-28:56 Virtual Env on Mac
-34:17 Install dependencies w/ pip
-36:21 Starting FastAPI
-39:23 Path Operations
-53:22 Intro toman
-57:34 HTTP Requests
-1:07:29 Schema Validation with Pydantic
-1:22:45 CRUD Operations
-1:29:44 Storing in Array
-1:34:06 Creating
-1:38:15 Postman Collections & saving requests
-1:39:47 Retrieve One
-1:48:10 Path order Matters
-1:52:46 Changing response Status Codes
-2:01:49 Deleting
-2:10:31 Updating
-2:18:02 Automatic Documentation
-2:21:34 Python packages
-2:24:11 Database Intro
-2:28:54 Postgres Windows Install
-2:31:28 Postgres Mac Install
-2:34:26 Database Schema & Tables
-2:44:35 Managing Postgres with PgAdmin GUI
-3:12:10 Your first SQL Query
-3:19:43 Filter results with "where"
-3:22:55 SQL Operators
-3:26:38 IN
-3:28:07 Pattern matching with LIKE
-3:31:59 Ordering Results
-3:36:27 LIMIT & OFFSET
-3:39:21 Modifying Data
-3:53:48 Setup App Database
-3:58:21 Connecting to database w/ Python
-4:08:00 Database CRUD
-4:31:18 ORM intro
-4:35:33 SQLALCHEMY setup
-4:55:25 Adding CreatedAt Column
-5:00:59 Get All
-5:07:55 Create
-5:15:50 Get by ID
-5:19:50 Delete
-5:22:31 Update
-5:28:21 Pydantic vs ORM Models
-5:32:21 Pydantic Models Deep Dive
-5:38:57 Response Model
-5:50:08 Creating Users Table
-5:54:50 User Registration Path Operation
-6:03:27 Hashing Passwords
-6:08:49 Refractor Hashing Logic
-6:10:32 Get User by ID
-6:17:13 FastAPI Routers
-6:27:34 Router Prefix
-6:30:31 Router Tags
-6:32:49 JWT Token Basics
-6:47:03 Login Process  
-7:00:44 Creating Token
-7:09:58 OAuth2 PasswordRequestForm
-7:13:23 Verify user is Logged In
-7:25:21 Fixing Bugs
-7:27:59 Protecting Routes
-7:36:17 Test Expired Token
-7:38:13 Fetching User in Protected Routes
-7:42:44 Postman advanced Features
-7:50:33 SQL Relationship Basics
-7:54:59 Postgres Foreign Keys
-8:07:20 SQLAlchemy Foreign Keys
-8:13:40 Update Schema to include User
-8:17:59 Assigning Owner id when creating new
-8:21:01 Delete and Update only your own
-8:27:48 Only Retrieving Logged in User's
-8:33:37 Sqlalchemy Relationships
-8:38:32 Query Parameters
-8:50:46 Cleanup our main.py file
-8:53:53 Env Variables
-9:21:20 Vote/Like Theory
-9:26:36 Votes Table
-9:31:33 Votes Sqlalchemy
-9:34:11 Votes Route
-9:52:31 SQL Joins
-10:15:26 Joins in SqlAlchemy
-10:28:21 Get One with Joins
-10:30:18 What is a database migration tool
-10:33:45 Alembic Setup
-11:13:50 Disable SqlAlchemy create Engine
-11:14:28 What is CORS?
-11:23:38 Git PreReqs
-11:27:40 Git Install
-11:29:23 Github
+# FastAPI Full Course Overview
+
+This course covers everything you need to know to work with FastAPI, from setting up your environment to building a fully functioning API with database integration, authentication, and more.
+
+| Topic                          | Description |
+|---------------------------------|-------------|
+| **Intro**                       | Introduction to the course and its objectives. |
+| **Project Overview**            | Overview of the API project you will build throughout the course. |
+| **Mac Python Installation**     | Step-by-step guide to install Python on Mac. |
+| **Mac VS Code Install & Setup** | Instructions for setting up Visual Studio Code on Mac. |
+| **Windows Python Installation** | Step-by-step guide to install Python on Windows. |
+| **Windows VS Code Install & Setup** | Instructions for setting up Visual Studio Code on Windows. |
+| **Python Virtual Environment Basics** | Overview of creating and managing virtual environments in Python. |
+| **Virtual Environment on Windows** | Setting up a virtual environment in Windows. |
+| **Virtual Environment on Mac** | Setting up a virtual environment on Mac. |
+| **Install Dependencies with pip** | How to install necessary dependencies using `pip`. |
+| **Starting FastAPI**            | Introduction to FastAPI framework and its basic structure. |
+| **Path Operations**             | Explanation of creating basic path operations (endpoints) in FastAPI. |
+| **Intro to HTTP Requests**      | Basics of HTTP requests, methods, and handling them in FastAPI. |
+| **Schema Validation with Pydantic** | Using Pydantic for data validation in FastAPI applications. |
+| **CRUD Operations**             | Implementing Create, Read, Update, Delete operations. |
+| **Storing in Array**            | Techniques to store data in an array structure. |
+| **Creating**                    | Creating new entries in your API. |
+| **Postman Collections & Saving Requests** | How to use Postman to test APIs and save requests. |
+| **Retrieve One**                | Fetching a single resource from the API. |
+| **Path Order Matters**          | The importance of ordering path operations in FastAPI. |
+| **Changing Response Status Codes** | How to modify the status codes returned by the API. |
+| **Deleting**                    | Implementing the delete functionality in your API. |
+| **Updating**                    | Updating existing entries in the API. |
+| **Automatic Documentation**     | FastAPI’s built-in support for automatic API documentation. |
+| **Python Packages**             | Overview of important Python packages used in FastAPI projects. |
+| **Database Intro**              | Introduction to using databases in FastAPI projects. |
+| **Postgres Windows Install**    | How to install PostgreSQL on Windows. |
+| **Postgres Mac Install**        | How to install PostgreSQL on Mac. |
+| **Database Schema & Tables**    | Designing a database schema and creating tables. |
+| **Managing Postgres with PgAdmin GUI** | Using PgAdmin to manage and interact with PostgreSQL databases. |
+| **Your First SQL Query**        | Writing and executing basic SQL queries. |
+| **Filter Results with WHERE**   | Using the `WHERE` clause to filter SQL query results. |
+| **SQL Operators**               | Overview of SQL operators to manipulate and query data. |
+| **IN Operator**                 | Using the `IN` operator in SQL queries. |
+| **Pattern Matching with LIKE**  | Using the `LIKE` operator for pattern matching in SQL. |
+| **Ordering Results**            | Sorting SQL query results using `ORDER BY`. |
+| **LIMIT & OFFSET**              | Paginating results using `LIMIT` and `OFFSET` in SQL. |
+| **Modifying Data**              | Techniques for modifying (insert, update, delete) data in SQL. |
+| **Setup App Database**          | Setting up the FastAPI app to work with a database. |
+| **Connecting to Database with Python** | How to connect FastAPI to a PostgreSQL database using Python. |
+| **Database CRUD**               | Implementing CRUD operations in the database via FastAPI. |
+| **ORM Introduction**            | Introduction to Object-Relational Mapping (ORM) in FastAPI. |
+| **SQLAlchemy Setup**            | Setting up SQLAlchemy as the ORM for the FastAPI project. |
+| **Adding CreatedAt Column**     | Adding timestamps for created entries in the database. |
+| **Get All**                     | Fetching all entries from a database table. |
+| **Create**                      | Adding new entries to the database. |
+| **Get by ID**                   | Fetching a single entry by its ID from the database. |
+| **Delete**                      | Deleting an entry from the database. |
+| **Update**                      | Updating an entry in the database. |
+| **Pydantic vs ORM Models**      | Understanding the difference between Pydantic and ORM models in FastAPI. |
+| **Pydantic Models Deep Dive**   | In-depth discussion on using Pydantic models for data validation. |
+| **Response Model**              | Creating structured response models in FastAPI. |
+| **Creating Users Table**        | Creating a database table for users. |
+| **User Registration Path Operation** | Implementing a user registration feature in FastAPI. |
+| **Hashing Passwords**           | Securing user passwords by hashing them. |
+| **Refactor Hashing Logic**      | Improving and refactoring the password hashing logic. |
+| **Get User by ID**              | Fetching a user by their ID. |
+| **FastAPI Routers**             | Organizing FastAPI routes using routers. |
+| **Router Prefix**               | Using prefixes to group related routes in FastAPI. |
+| **Router Tags**                 | Organizing routes with tags for better API documentation. |
+| **JWT Token Basics**            | Basics of JWT tokens for authentication in FastAPI. |
+| **Login Process**               | Implementing user login and authentication. |
+| **Creating Token**              | How to generate JWT tokens for users. |
+| **OAuth2 Password Request Form**| Using OAuth2 for secure authentication in FastAPI. |
+| **Verify User is Logged In**    | Verifying whether a user is authenticated. |
+| **Fixing Bugs**                 | Common bugs and how to fix them during FastAPI development. |
+| **Protecting Routes**           | Securing routes to allow only authorized users to access them. |
+| **Test Expired Token**          | Testing expired tokens in the authentication process. |
+| **Fetching User in Protected Routes** | Fetching the currently authenticated user in protected routes. |
+| **Postman Advanced Features**   | Exploring advanced features of Postman for API testing. |
+| **SQL Relationship Basics**     | Introduction to relationships between SQL tables. |
+| **Postgres Foreign Keys**       | Implementing foreign keys in PostgreSQL. |
+| **SQLAlchemy Foreign Keys**     | Managing foreign keys with SQLAlchemy in FastAPI. |
+| **Update Schema to Include User** | Updating the database schema to include user relationships. |
+| **Assigning Owner ID When Creating New** | Assigning a user as the owner of a newly created resource. |
+| **Delete and Update Only Your Own** | Restricting delete and update actions to the owner of the resource. |
+| **Only Retrieving Logged In User’s** | Allowing users to retrieve only their own resources. |
+| **SQLAlchemy Relationships**    | Working with relationships between models in SQLAlchemy. |
+| **Query Parameters**            | Using query parameters in FastAPI routes. |
+| **Cleanup Main.py File**        | Organizing and cleaning up the main FastAPI file. |
+| **Environment Variables**       | Using environment variables to secure sensitive data. |
+| **Vote/Like Theory**            | Overview of implementing a vote/like feature in your application. |
+| **Votes Table**                 | Creating a database table for storing votes/likes. |
+| **Votes SQLAlchemy**            | Managing vote data with SQLAlchemy. |
+| **Votes Route**                 | Creating API routes for voting/liking resources. |
+| **SQL Joins**                   | Using SQL joins to combine data from multiple tables. |
+| **Joins in SQLAlchemy**         | Implementing joins using SQLAlchemy. |
+| **Get One with Joins**          | Fetching a single resource using joins to include related data. |
+| **Database Migration Tool**     | Introduction to tools for migrating database schema changes. |
+| **Alembic Setup**               | Setting up Alembic for database migrations in FastAPI. |
+| **Disable SQLAlchemy Create Engine** | Optimizing SQLAlchemy engine behavior for better performance. |
+| **What is CORS?**               | Explanation of Cross-Origin Resource Sharing (CORS) and its configuration. |
+| **Git Prerequisites**           | Setting up prerequisites for using Git in projects. |
+| **Git Install**                 | Installing Git on your system. |
+| **Github**                      | Using GitHub for version control and project collaboration. |
+
+---
+
+Happy Coding!
