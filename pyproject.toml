@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "apivirtualenv"
+version = "0.1.0"
+description = ""
+authors = ["Muhammad Talha <107929962+LearnCode801@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.115.0"}
+psycopg2 = "^2.9.9"
+sqlalchemy = "^2.0.35"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+alembic = "^1.13.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
